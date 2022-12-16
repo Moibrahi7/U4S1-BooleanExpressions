@@ -1,7 +1,8 @@
-package com.codedifferently.labs.partA;
+package com.codedifferently.labs.partA.ex03;
 
 public class ShoppingCart {
-    public static void main(String[] args) {
+    public static String shopping(){
+        String response = "";
         String custName = "Mary Smith";
         String itemDesc = "Shirt";
 
@@ -23,6 +24,15 @@ public class ShoppingCart {
 
 
         // Test outOfStock and notify user in either case.
+
+
+        return response;
     }
 
-    }
+
+
+    public static void main(String[] args) {
+        String shopOutput = shopping();
+        System.out.println(shopOutput);
+
+    }}

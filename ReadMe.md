@@ -2,7 +2,7 @@
 
 * Part A - Foundations 5.1
 * Part B - Foundations Practice
-* Part C - Instructor Challenge
+* Part C - Algorithm Challenge
 
 ## Part A
 
@@ -10,24 +10,7 @@
 
 #### Step 01
 
-In the package `partA` look at the file `AgeValidity`.
-
-#### Step 02
-
-* Modify `AgeValidity` to implement the following:
-  * Have users enter their age
-  * Declare a boolean variable, drivingUnderAge
-  * Initialize drivingUnderAge to false
-  * Write a boolean expression to check if the age entered by the
-  user is less than or equal to 18, and then set drivingUnderAge
-  to true
-  * Print the value of drivingUnderAge
-
-### Exercise 02
-
-#### Step 01
-
-In the package `partA` look at the file `ChkOddEven`
+In the package `labs.partA.ex01` look at the file `ChkOddEven`
 
 #### Step 02
 
@@ -41,11 +24,11 @@ In the package `partA` look at the file `ChkOddEven`
   −Enter a number: 7
   −The num is odd 7
 
-### Exercise 03
+### Exercise 02
 
 #### Step 01
 
-In the package `partA` look at the file `AgeCheck`
+In the package `labs.partA.ex02` look at the file `AgeCheck`
 
 #### Step 02
 
@@ -56,12 +39,18 @@ In the package `partA` look at the file `AgeCheck`
       program a few times and try different values to see which
       ones fail)
     * Replace the two if statements with an if/else statement
+    * Change the age to 12 and run your program 
+
+Your program is working correctly, if when run, the following is the output:
+```
+I'm not old enough yet... :*(
+```
   
-### Exercise 04
+### Exercise 03
 
 #### Step 01
 
-In the package `partA` look at the file `ShoppingCart`
+In the package `labs.partA.ex03` look at the file `ShoppingCart`
 
 #### Step 02
 
@@ -71,23 +60,12 @@ In the package `partA` look at the file `ShoppingCart`
       * If quantity > 1, change the message variable to indicate plural
       * If an item is out of stock, inform the user that the item is
       unavailable, else print the message and the total
-
-### Exercise 05
-
-#### Step 01
-
-In the package `partA` look at the file `StringEquality`
-
-#### Step 02
-
-* Examine `StringEquality`:
-    * Use an if and an if/else statement:
-        * Declare a String variable name
-        * Have the user input a value for the name
-        * Check whether the name is “Moe,” and then print “You are
-          the king of rock and roll”
-        * Otherwise print “You are not the king”
-        * Don’t use ==
+      
+Your program is working correctly, if when run, the following is the output:
+```
+Mary Smith wants to purchase 2 Shirts
+Total cost with tax: 45.7392
+```
       
 ## Part B
 
@@ -107,7 +85,7 @@ The program should compare that input and based on the result of the comparison,
 
 * If input is less than or equal to 45 - "It's cold - putting on a coat!"
 * If input is greater than or equal to 46 and less than or equal to 65 - "It's not bad out - a hoodie will do just fine!"
-* Any other situation, - "It's hot - a Tshirt will be perfect."
+* Any other situation, - "It's hot - a T shirt will be perfect."
 
 Your program is working correctly, if when run, the following is the output (Abe first name Lincoln last name):
 
@@ -177,7 +155,7 @@ In the package `partB.ex04` complete the `IfElseDemo` per the following:
 
 * Create a program that takes a user input as a number
 * Check the number, if it is equal to 7, the program should print to the user "That's lucky!"
-* If after checking the number and it is not equal to 7, print to the user "That's unlucky!"
+* If after checking the number, and it is not equal to 7, print to the user "That's unlucky!"
 
 Your program is working correctly, if when run, the following is the output:
 
@@ -192,49 +170,32 @@ That's unlucky!
 
 ## Part C
 
-### Activity 01: Determining color in the visible spectrum
+### Problem 01
+Your local rapper is looking to create his next hook for his next track. He wants to add phrases that begin with "mix".
+But he decides he wants to take it a step further and accept any phrase except the "m" can be any letter or number.
+He needs your help to make sure the list of given phrases begin with what was asked.
 
-### Overview
+Return true if the given phrase begins with "mix", or any beginning letter or number following "ix"
 
-Write an complete `ColorRange` in package `partC.ex01`, which when given a wavelength in nanometers will return the corresponding color in the visible spectrum.
-
-| Color | Wavelength (nm) |
-| ----- | --------------- |
-|Violet| 380-450|
-|Blue | 450-495|
-|Green| 495 - 570 |
-|Yellow| 570 - 590 |
-|Orange| 590 - 620 |
-|Red| 620-750 |
-
-### Task
-
-You must implement the following using a suitable `if` statement:
-
-* Prompt the user to enter the wavelength, the value should be of type double.
-* For each range (e.g. 380 - 450) the number on the left is included in the range, but the number on the right is not included in the range.
-* If the input value is not found on the visible spectrum then state the wavelength is not within the visible spectrum.
-
-#### Expected Output 1
-
-```
-Enter a color code:
-630
-The Color is Red
+Example:
+```java
+startWithIx("mix snacks") --> true
+startWithIx("pix snacks") --> true
+startWithIx("piz snacks") --> false
 ```
 
-#### Expected Output 2
+### Problem 02
+Provide two numbers, evaluate both numbers to see which one is nearest to the value 10.
+Some numbers may have the same range in how near they are to 10; such as 13 and 7 both are 3 from 10;
+In that case, we would consider that event a tie.
 
-```
-Enter a color code:
-25.0
-The entered wavelength is not a part of the visible spectrum.
-```
+Tip: Math.abs(n) returns the absolute value of a number
 
-#### Expected Output 3
+Return whichever number is nearest to 10, or return 0 for the event of a tie.
 
-```
-Enter a color code:
-750.5
-The entered wavelength is not a part of the visible spectrum.
+Example:
+```java
+near10(8, 13) --> 8
+near10(13, 8) --> 8
+near10(13, 7) --> 0
 ```
