@@ -12,3 +12,4 @@ public class AgeCheckTest {
         Assertions.assertEquals(expected, actual);
     }
 }
+ 
