@@ -20,10 +20,6 @@
             <version>5.8.2</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <testSourceDirectory>src/test/java/com/codedifferently/labs</testSourceDirectory>
-        </dependency>
-
     </dependencies>
 
 </project>
