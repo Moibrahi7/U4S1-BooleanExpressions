@@ -21,4 +21,4 @@ jobs:
         java-version: '17' # Use the desired Java version
 
     - name: Run Maven tests
-      run: mvn -q test
+      run: mvn -q test -DtrimStackTrace=true
