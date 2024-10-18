@@ -22,3 +22,6 @@ jobs:
 
     - name: Run Maven tests
       run: mvn -q test -DtrimStackTrace=true
+    
+    - name: Run Maven tests with stack trace
+      run: mvn test
