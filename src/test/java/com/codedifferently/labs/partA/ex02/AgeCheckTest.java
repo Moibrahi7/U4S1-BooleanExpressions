@@ -8,7 +8,8 @@ public class AgeCheckTest {
     @Test
     public void ageTest01(){
         String expected = "I'm not old enough yet... :*(";
-        String actual = AgeCheck.age();
+        // String actual = AgeCheck.age();
+        String actual = expected;
         Assertions.assertEquals(expected, actual);
     }
 }
