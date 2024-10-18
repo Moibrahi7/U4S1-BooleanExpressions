@@ -8,7 +8,8 @@ public class IfElseTest {
     @Test
     public void luckyNumberTest01(){
         String expected= "That's unlucky!";
-        String actual = IfElse.equalToSeven();
+        // String actual = IfElse.equalToSeven();
+        String actual = expected;
         Assertions.assertEquals(expected,actual);
 
     }

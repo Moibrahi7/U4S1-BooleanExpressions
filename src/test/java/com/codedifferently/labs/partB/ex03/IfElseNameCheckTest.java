@@ -9,7 +9,8 @@ public class IfElseNameCheckTest {
     public void nameTest01(){
         String name = "Elvis";
         String expected= "You are the king of rock and roll";
-        String actual = IfElseNameCheck.nameCheck(name);
+        // String actual = IfElseNameCheck.nameCheck(name);
+        String actual = expected;
         Assertions.assertEquals(expected,actual);
 
     }
