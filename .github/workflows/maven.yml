@@ -19,9 +19,11 @@ jobs:
       with:
         distribution: 'temurin' # Install JDK from AdoptOpenJDK (now called Eclipse Temurin)
         java-version: '17' # Use the desired Java version
+    
+    - name: Run Maven tests with stack trace
+      run: mvn test
 
     - name: Run Maven tests
       run: mvn -q test -DtrimStackTrace=true
     
-    - name: Run Maven tests with stack trace
-      run: mvn test
+
