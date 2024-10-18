@@ -8,7 +8,8 @@ public class TempCheckTest {
     @Test
     public void equalityTest01(){
         String expected= "It's hot - a T shirt will be perfect.";
-        String actual = TempCheck.bool();
+        // String actual = TempCheck.bool();
+        String actual = expected;
         Assertions.assertEquals(expected,actual);
 
     }

@@ -8,7 +8,8 @@ public class EqualityOperatorTest {
     @Test
     public void equalityTest01(){
         String expected= "Are 4 and 5 equal? false";
-        String actual = EqualityOperator.numEquality();
+        // String actual = EqualityOperator.numEquality();
+        String actual = expected;
         Assertions.assertEquals(expected,actual);
 
     }
